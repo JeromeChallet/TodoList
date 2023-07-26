@@ -1,7 +1,7 @@
 let db = "";
 async function main(){
     try{
-        db = await mongoose.connect("mongodb+srv://jeromepchallet:Ujc5ZQfJqCjYLqgh@cluster0.xb92egm.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+        db = await mongoose.connect("mongodb+srv://<username>:<password>@cluster0.xb92egm.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
     console.log("connected to database server...");
 } catch(err){
     console.log("failed to connect to the database");
